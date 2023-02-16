@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Formulario de acceso </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <div id="div1">
+            <form id="Formulario" class="Formulario" action="">
+                <h1> Create Account </h1>
+
+                <h2>Nombre</h2>
+                <input type="text" id='nombre' name='nombre'/>
+                <p id="errorNombre"></p>
+
+                <h2>Email</h2>
+                <input type="email" id="email-usuario" name="email-usuario" />
+                <p id="errorEmail"></p>
+
+                <h2>Clave</h2>
+                <input type="password" id="clave" name="clave" />
+                <p id="errorClave"></p>
+
+                <h2>Confirme su clave</h2>
+                <input type="password" id="clave2" name="clave2" onkeyup="validarClaves()"/>
+                <p id="errorClave2"></p>
+                <br/>
+                <br/>
+                <input type="submit" id="submit" value="ENVIAR"/>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="index.js"></script>
+    </body>    
+</html>
